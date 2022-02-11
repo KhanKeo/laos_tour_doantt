@@ -73,7 +73,7 @@ $controller = 'dattour';
         ?>
             <tr>
                 <td><?= $cnt ?></td>
-                <td><?= $result['ho_tai_khoan'] . ' ' . $result['ten_tai_khoan'] ?></td>
+                <td><?= $result['ho'] . ' ' . $result['ten'] ?></td>
                 <td><?= $result['ten_tour'] ?></td>
                 <td><?= number_format($result['gia_nguoi_lon']) ?></td>
                 <td><?= number_format($result['gia_tre_em']) ?></td>

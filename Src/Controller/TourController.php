@@ -249,7 +249,7 @@ class TourController extends Controller
     {
         ///$id_user = model('Tour')->find($id)->first()['id_tai_khoan'];
 
-        Middleware::start()->check_permission([2])->execute();
+        Middleware::start()->check_permission([1, 2])->execute();     
 
         Validation::validate(Request::all(), [
             'ten' => 'required',

@@ -356,7 +356,7 @@ class DatTourController extends Controller
             'trang_thai' => 0,
         ]);
 
-        return success(['code' => 'cancel_success']);
+        return success(['code' => 'destroy_success']);
     }
 
     public function print($id)

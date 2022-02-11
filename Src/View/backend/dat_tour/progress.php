@@ -130,8 +130,8 @@ $controller = 'dattour';
                 Xác nhận hủy
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="confirmCancel()">Xóa</button>
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Hủy</button>
+                <button id="cancel-button" type="button" class="btn btn-primary" onclick="confirmCancel()">Có</button>
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Không</button>
             </div>
         </div>
     </div>
@@ -194,9 +194,13 @@ $controller = 'dattour';
                 }
             },
             error: (xhr) => {
+                $('#cancel-button').prop('disabled', false);
+                $('#cancel-button').html('Hủy');
                 redirect('/' + controller + '/progress', 'Xóa không thành công', 'error');
             }
         })
+        $('#cancel-button').prop('disabled', true);
+        $('#cancel-button').html('Đang hủy...')
     }
 
     const confirmAccept = () => {

@@ -142,7 +142,7 @@
                         $now = date_create(date('Y-m-d H:i:s'));
                         $date = date_create($tour['ngay_ket_thuc']);
                     ?>
-                        <div class="list-block main-block t-list-block">
+                        <div class="list-block t-list-block">
                             <div class="list-content">
                                 <div class="main-img list-img t-list-img">
                                     <a href="/tour/view/<?= $tour['id'] ?>">
