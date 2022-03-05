@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 20, 2022 lúc 11:47 AM
--- Phiên bản máy phục vụ: 10.4.21-MariaDB
--- Phiên bản PHP: 8.0.10
+-- Host: 127.0.0.1
+-- Generation Time: Feb 28, 2022 at 11:31 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `tour`
+-- Database: `tour`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `blog`
+-- Table structure for table `blog`
 --
 
 CREATE TABLE `blog` (
@@ -37,7 +37,7 @@ CREATE TABLE `blog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `blog`
+-- Dumping data for table `blog`
 --
 
 INSERT INTO `blog` (`id`, `id_tai_khoan`, `tieu_de`, `tom_tat`, `noi_dung`, `ngay_dang`) VALUES
@@ -54,7 +54,7 @@ INSERT INTO `blog` (`id`, `id_tai_khoan`, `tieu_de`, `tom_tat`, `noi_dung`, `nga
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `dat_tour`
+-- Table structure for table `dat_tour`
 --
 
 CREATE TABLE `dat_tour` (
@@ -76,7 +76,7 @@ CREATE TABLE `dat_tour` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `dat_tour`
+-- Dumping data for table `dat_tour`
 --
 
 INSERT INTO `dat_tour` (`id`, `ma_dat_tour`, `id_tai_khoan`, `id_tour`, `ho`, `ten`, `sdt`, `email`, `gia_nguoi_lon`, `so_nguoi_lon`, `gia_tre_em`, `so_tre_em`, `trang_thai`, `ghi_chu`, `ngay_dat`) VALUES
@@ -86,18 +86,20 @@ INSERT INTO `dat_tour` (`id`, `ma_dat_tour`, `id_tai_khoan`, `id_tour`, `ho`, `t
 (5, '859483', 3, 3, 'David', 'Bekham', 36986521, 'abc@gmail.com', 1790000, 2, 1710000, 2, 3, '', '2021-12-12 19:00:00'),
 (6, '859483', 3, 1, 'David', 'Bekham', 36986521, 'abc@gmail.com', 1990000, 2, 1390000, 1, 3, '', '2021-08-15 19:00:00'),
 (8, '531962', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khankeo9992016@gmail.com', 8199000, 2, 7900000, 1, 0, '', '2021-11-16 14:50:02'),
-(9, '793686', 6, 1, 'Nguyễn Quốc', 'Tuấn', 848773732, 'khach2@fake.com', 1990000, 5, 1390000, 0, 1, '', '2022-01-20 16:51:02'),
-(10, '245392', 6, 1, 'Nguyễn Quốc', 'Tuấn', 848773732, 'khach2@fake.com', 1990000, 1, 1390000, 0, 1, '', '2022-01-20 16:55:41'),
-(11, '877769', 5, 2, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 3390000, 1, 3190000, 0, 1, '', '2022-01-20 17:00:56'),
-(12, '259610', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 8199000, 4, 7900000, 0, 1, '', '2022-01-20 17:08:25'),
-(13, '323911', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 8199000, 1, 7900000, 1, 2, '', '2022-01-20 17:12:29'),
-(14, '847582', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khankeo9992016@gmail.com', 8199000, 1, 7900000, 0, 2, '', '2022-01-20 17:14:38'),
-(15, '316837', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 8199000, 1, 7900000, 0, 1, '', '2022-01-20 17:15:47');
+(9, '793686', 6, 1, 'Nguyễn Quốc', 'Tuấn', 848773732, 'khach2@fake.com', 1990000, 5, 1390000, 0, 0, '', '2022-01-20 16:51:02'),
+(10, '245392', 6, 1, 'Nguyễn Quốc', 'Tuấn', 848773732, 'khach2@fake.com', 1990000, 1, 1390000, 0, 0, '', '2022-01-20 16:55:41'),
+(11, '877769', 5, 2, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 3390000, 1, 3190000, 0, 0, '', '2022-01-20 17:00:56'),
+(12, '259610', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 8199000, 4, 7900000, 0, 0, '', '2022-01-20 17:08:25'),
+(13, '323911', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 8199000, 1, 7900000, 1, 3, '', '2022-01-20 17:12:29'),
+(14, '847582', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khankeo9992016@gmail.com', 8199000, 1, 7900000, 0, 0, '', '2022-01-20 17:14:38'),
+(15, '316837', 5, 4, 'Trần Phương', 'Nam', 848773731, 'khach2@fake.com', 8199000, 1, 7900000, 0, 0, '', '2022-01-20 17:15:47'),
+(16, '188343', 11, 16, 'xay', 'xay', 99999999, 'Xaymeth123@gmail.com', 2000000, 3, 800000, 1, 2, '', '2022-02-24 14:12:27'),
+(17, '386446', 11, 17, 'xay', 'xay', 99999999, 'Xaymeth123@gmail.com', 2000000, 9, 1000000, 2, 2, '', '2022-02-24 14:26:18');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `khach_hang`
+-- Table structure for table `khach_hang`
 --
 
 CREATE TABLE `khach_hang` (
@@ -109,7 +111,7 @@ CREATE TABLE `khach_hang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `khach_hang`
+-- Dumping data for table `khach_hang`
 --
 
 INSERT INTO `khach_hang` (`id`, `id_tai_khoan`, `ngay_sinh`, `dia_chi`, `id_tinh`) VALUES
@@ -117,12 +119,13 @@ INSERT INTO `khach_hang` (`id`, `id_tai_khoan`, `ngay_sinh`, `dia_chi`, `id_tinh
 (2, 6, '1995-05-05', '704 Phan Đình Phùng', 1),
 (3, 7, '2000-01-03', '704 Phan Đình Phùng', 1),
 (4, 8, '1995-02-05', '704 Phan Đình Phùng', 1),
-(5, 9, '1994-04-05', '704 Phan Đình Phùng', 1);
+(5, 9, '1994-04-05', '704 Phan Đình Phùng', 1),
+(7, 11, '1999-02-19', '307 duy tân', 15);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `loai_slide`
+-- Table structure for table `loai_slide`
 --
 
 CREATE TABLE `loai_slide` (
@@ -131,7 +134,7 @@ CREATE TABLE `loai_slide` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `loai_slide`
+-- Dumping data for table `loai_slide`
 --
 
 INSERT INTO `loai_slide` (`id`, `ten`) VALUES
@@ -142,7 +145,7 @@ INSERT INTO `loai_slide` (`id`, `ten`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `loai_tro_giup`
+-- Table structure for table `loai_tro_giup`
 --
 
 CREATE TABLE `loai_tro_giup` (
@@ -151,7 +154,7 @@ CREATE TABLE `loai_tro_giup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `loai_tro_giup`
+-- Dumping data for table `loai_tro_giup`
 --
 
 INSERT INTO `loai_tro_giup` (`id`, `ten`) VALUES
@@ -163,7 +166,7 @@ INSERT INTO `loai_tro_giup` (`id`, `ten`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `quoc_gia`
+-- Table structure for table `quoc_gia`
 --
 
 CREATE TABLE `quoc_gia` (
@@ -172,7 +175,7 @@ CREATE TABLE `quoc_gia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `quoc_gia`
+-- Dumping data for table `quoc_gia`
 --
 
 INSERT INTO `quoc_gia` (`id`, `ten`) VALUES
@@ -183,7 +186,7 @@ INSERT INTO `quoc_gia` (`id`, `ten`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `slide`
+-- Table structure for table `slide`
 --
 
 CREATE TABLE `slide` (
@@ -199,19 +202,19 @@ CREATE TABLE `slide` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `slide`
+-- Dumping data for table `slide`
 --
 
 INSERT INTO `slide` (`id`, `id_tai_khoan`, `id_loai_slide`, `tieu_de`, `noi_dung`, `ngay_bat_dau`, `ngay_ket_thuc`, `url`, `ngay_dang`) VALUES
 (1, 1, 1, 'LAO TOUR', 'Chào mừng đến với Lao Tour', NULL, NULL, '/tour/local', '2022-01-20 17:44:09'),
-(2, 1, 1, 'TOUR KHUYẾN MÃI 2', 'Cà rốt ipsum Lorem cho hai chạy câu chuyện bình đẳng trong lucilius đầu tiên lợi ích. Tôi muốn nó đã được chọn.', '2021-11-18 06:00:00', '2021-11-20 23:00:00', 'https://dulichviet.com.vn/', '2021-11-18 06:00:00'),
-(3, 1, 2, 'Tour Du Lịch Vịnh Hạ Long 2 Ngày 1 Đêm', 'Lịch Trình Du Lịch Vịnh Hạ Long 2 Ngày 1 Đêm Mới Nhất', NULL, NULL, 'https://www.facebook.com/', '2021-12-25 10:56:04'),
+(2, 1, 1, 'TOUR KHUYẾN MÃI 2', 'Cà rốt ipsum Lorem cho hai chạy câu chuyện bình đẳng trong lucilius đầu tiên lợi ích. Tôi muốn nó đã được chọn.', '2021-11-18 06:00:00', '2022-03-11 23:00:00', 'https://dulichviet.com.vn/', '2022-02-25 13:59:19'),
+(3, 1, 2, 'Tour Du Lịch Vịnh Hạ Long 2 Ngày 1 Đêm', 'Lịch Trình Du Lịch Vịnh Hạ Long 2 Ngày 1 Đêm Mới Nhất', NULL, NULL, 'https://www.facebook.com/', '2022-02-11 14:14:32'),
 (4, 1, 3, '11 địa điểm du lịch Việt Nam mở cửa đón khách trở lại', 'Dịch Covid-19 giáng một đòn nặng nề vào mọi mặt kinh tế, mà ảnh hưởng nhiều nhất có lẽ là lĩnh vực dịch vụ du lịch - lữ hành. Tại Việt Nam, hàng loạt điểm tham quan nổi tiếng phải đóng cửa, các cơ sở lưu trú và những người làm trong ngành này cũng phải nghỉ dịch hết mấy tháng trời.', NULL, NULL, 'http://localhost:81/blog/view/4', '2021-12-25 11:07:13');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tai_khoan`
+-- Table structure for table `tai_khoan`
 --
 
 CREATE TABLE `tai_khoan` (
@@ -226,24 +229,25 @@ CREATE TABLE `tai_khoan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `tai_khoan`
+-- Dumping data for table `tai_khoan`
 --
 
 INSERT INTO `tai_khoan` (`id`, `username`, `password`, `ho`, `ten`, `sdt`, `email`, `loai`) VALUES
 (1, 'admin', '123456', 'Nguyen', 'KhanKeo', '0984776431', 'khankeolaos1997@gmail.com', 1),
-(2, 'quanly1', '123456', 'Đặng Nhật', 'Nam', '0877474331', 'skhankeo.k11tt@kontum.udn.vn', 2),
+(2, 'quanly1', '123456', 'khankeo', 'sodp', '0877474331', 'skhankeo.k11tt@kontum.udn.vn', 2),
 (3, 'quanly2', '123456', 'Nguyễn Thị', 'Chi', '0877474332', 'quanly2@fake.com', 2),
 (4, 'quanly3', '123456', 'Trần Bảo', 'Anh', '0877474333', 'quanly3@fake.com', 2),
 (5, 'khach1', '123456', 'Trần Phương', 'Nam', '0848773731', 'khankeo9992016@gmail.com', 3),
 (6, 'khach2', '123456', 'Nguyễn Quốc', 'Tuấn', '0848773732', 'khach2@fake.com', 3),
 (7, 'khach3', '123456', 'Nguyễn', 'Thao', '0848773733', 'khach3@fake.com', 3),
 (8, 'khach4', '123456', 'Trần Ngọc', 'Ánh', '0848773734', 'khach4@fake.com', 3),
-(9, 'khach5', '123456', 'Trần', 'Khánh', '0848773735', 'khach5@fake.com', 3);
+(9, 'khach5', '123456', 'Trần', 'Khánh', '0848773735', 'khach5@fake.com', 3),
+(11, 'khach01', '123456', 'xay', 'xay', '99999999', 'Xaymeth123@gmail.com', 3);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tinh`
+-- Table structure for table `tinh`
 --
 
 CREATE TABLE `tinh` (
@@ -253,7 +257,7 @@ CREATE TABLE `tinh` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `tinh`
+-- Dumping data for table `tinh`
 --
 
 INSERT INTO `tinh` (`id`, `id_quoc_gia`, `ten`) VALUES
@@ -326,7 +330,7 @@ INSERT INTO `tinh` (`id`, `id_quoc_gia`, `ten`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tour`
+-- Table structure for table `tour`
 --
 
 CREATE TABLE `tour` (
@@ -350,19 +354,27 @@ CREATE TABLE `tour` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `tour`
+-- Dumping data for table `tour`
 --
 
 INSERT INTO `tour` (`id`, `id_tai_khoan`, `id_tinh_xuat_phat`, `dia_chi_xuat_phat`, `id_tinh_diem_den`, `dia_chi_diem_den`, `ten`, `so_nguoi`, `ngay_khoi_hanh`, `ngay_ket_thuc`, `phuong_tien`, `gia_goc_nguoi_lon`, `gia_nguoi_lon`, `gia_goc_tre_em`, `gia_tre_em`, `gioi_thieu`, `ngay_dang`) VALUES
-(1, 2, 32, 'Nha Trang', 38, 'Đà Lạt', 'Tour du lịch Nha Trang - Đà Lạt 5N4Đ', 50, '2021-11-08 08:00:00', '2021-11-12 17:00:00', 'Xe buýt', 2100000, 1990000, 1500000, 1390000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-11-07 19:00:00'),
+(1, 2, 32, 'Nha Trang', 38, 'Đà Lạt', 'Tour du lịch Nha Trang - Đà Lạt 5N4Đ', 50, '2021-11-08 08:00:00', '2021-11-12 17:00:00', 'Xe buýt', 2100000, 1990000, 1500000, 1390000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2021-11-07 19:00:00'),
 (2, 1, 30, 'Thành phố Hồ Chí Minh', 24, 'Thành phố Hà ', ' Miền Bắc Hà Nội - Hà Giang - Lũng Cú - Cao Bằng - Hồ Ba Bể', 30, '2021-12-06 08:06:00', '2021-12-10 08:06:00', 'Xe buýt', 3500000, 3390000, 3400000, 3190000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2021-12-06 08:10:10'),
 (3, 2, 53, 'Tây Ninh', 30, 'Thành phố Hồ Chí Minh', 'Tây Ninh - Tòa Thánh Cao Đài - Vinpearl - Tu Viện Khánh An', 20, '2021-12-10 08:00:00', '2021-12-11 17:00:00', 'Xe buýt', 2190000, 1799000, 1800000, 1710000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Cá', '2021-12-06 08:41:07'),
-(4, 2, 24, 'Thành phố Hà Nội', 37, 'Lào Cai', 'Du lịch Hà Nội - Yên Tử - Hạ Long - Tràng An - Sa Pa', 20, '2021-12-16 09:53:00', '2021-12-18 09:53:00', 'Xe buýt', 9199000, 8199000, 8900000, 7900000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2021-12-06 09:58:02');
+(4, 2, 24, 'Thành phố Hà Nội', 37, 'Lào Cai', 'Du lịch Hà Nội - Yên Tử - Hạ Long - Tràng An - Sa Pa', 20, '2021-12-16 09:53:00', '2021-12-18 09:53:00', 'Xe buýt', 9199000, 8199000, 8900000, 7900000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2021-12-06 09:58:02'),
+(9, 2, 32, 'Nha Trang', 38, 'Đà Lạt', 'Tour du lịch Nha Trang - Đà Lạt 5N4Đ v2', 50, '2021-11-09 08:00:00', '2021-11-13 17:00:00', 'Xe buýt', 2100000, 1990000, 1500000, 1390000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-10 20:50:41'),
+(13, 3, 32, 'Nha Trang', 38, 'Đà Lạt', 'Tour du lịch Nha Trang - Đà Lạt 5N4Đ', 50, '2022-02-11 08:00:00', '2022-02-14 17:00:00', 'Xe buýt', 2100000, 1990000, 1500000, 1390000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-10 21:02:06'),
+(14, 2, 32, 'Nha Trang', 38, 'Đà Lạt', 'Tour du lịch Nha Trang - Đà Lạt 5N4Đ', 20, '2022-02-26 08:00:00', '2022-02-27 17:00:00', 'Xe buýt', 2100000, 1990000, 1500000, 1390000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-24 13:20:37'),
+(15, 2, 17, '306 DUY TÂN, PHƯƠNG DUY TÂN', 64, 'ĐỨC LÔC ATTPUE', 'KONTUM-ATTAPEU', 10, '2022-02-25 13:48:00', '2022-02-28 13:48:00', 'xe buýt', 2000000, 1500000, 1000000, 800000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-24 13:53:02'),
+(16, 2, 17, '306 DUY TÂN, PHƯƠNG DUY TÂN', 64, 'ĐỨC LÔC ATTPUE', 'KONTUM-ATTAPEU', 10, '2022-02-26 13:48:00', '2022-03-01 13:48:00', 'xe buýt', 2500000, 2000000, 1000000, 800000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-24 13:55:56');
+INSERT INTO `tour` (`id`, `id_tai_khoan`, `id_tinh_xuat_phat`, `dia_chi_xuat_phat`, `id_tinh_diem_den`, `dia_chi_diem_den`, `ten`, `so_nguoi`, `ngay_khoi_hanh`, `ngay_ket_thuc`, `phuong_tien`, `gia_goc_nguoi_lon`, `gia_nguoi_lon`, `gia_goc_tre_em`, `gia_tre_em`, `gioi_thieu`, `ngay_dang`) VALUES
+(17, 2, 16, 'đắc lắc', 15, 'Đà Nẵng', 'kontum-Đà Nẵng', 11, '2022-02-24 08:00:00', '2022-03-01 17:00:00', 'Xe buýt', 2500000, 2000000, 1500000, 1000000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-24 14:25:09'),
+(18, 2, 16, 'đắc lắc', 15, 'Đà Nẵng', 'kontum-Đà Nẵng', 11, '2022-02-26 08:00:00', '2022-02-28 17:00:00', 'Xe buýt', 2500000, 2000000, 1500000, 1000000, '@description\nGiới thiệu\n@schedule\n#HCM - PHÚ QUỐC - TOUR 4 ĐẢO - HÒN THƠM - THIÊN ĐƯỜNG ĐỊA TRUNG HẢI - NGẮM HOÀNG HÔN ĐẢO NGỌC (Ăn trưa, tối)\nBuổi sáng: HDV đón Qúy khách làm thủ tục đáp chuyến bay đi Phú Quốc. Đến Phú Quốc, xe và HDV đón đoàn đi Nam Đảo - trung tâm An Thới ăn trưa tại nhà hàng nghỉ ngơi, Đến giờ đoàn lên thuyền trải nghiệm Tour 04 Đảo: tắm biển tại những hòn đảo đẹp nhất Phú Quốc. Bao gồm Hòn Mây Rút, Hòn Móng Tay, Hòn Gầm Ghì, Hòn Thơm, tham quan chụp hình khu du lịch biển hiện đại bậc nhất Việt Nam.\n!1\n#PHÚ QUỐC - GÀNH DẦU - KHÁM PHÁ BẮC ĐẢO - SAFARI - VINWONDER - GRAND WORLD (Ăn sáng, trưa)\nĐoàn ăn sáng và sử dụng các tiện ích tại khách sạn, đến giờ hẹn Xe và HDV đón đoàn đi tham tham quan các điểm tại khu vực Bắc Đảo gồm:\nKhu phức hợp giải trí “ Phú Quốc United Center – Grand World ” thỏa thích chụp hình với những công trình kiến trúc độc đáo, hội tụ tinh hoa không chỉ tại Việt Nam mà còn khắp nơi trên thế giới, được tạo\n!2\n@include\n- Vé máy bay khứ hồi hãng Vietnam Airlines/Pacific airline/Vietjet/Bamboo;  Miễn phí 7kg hành lý xách tay/khách\n- Xe tham quan (16, 25, 29, 35, 45 chỗ tùy theo số lượng khách) theo chương trình\n- Khách sạn theo tiêu chuẩn 3sao, 2 khách/phòng hoặc 3 khách/phòng \nTương đương 3sao: Suncosy Central Resort, Palma, Lam Hà, Orange, Vanda ,… hoặc tương đương\n- Ăn sáng và ăn chính theo chương trình\n- Tour 4 đảo - tàu thuyền đưa đón tham quan, vé tham quan Ngắm hoàng hôn và các điểm theo chương trình\n- Hướng dẫn viên thuyết minh chuyên nghiệp, kinh nghiệm, vui vẻ suốt tuyết.\n- Bảo hiểm du lịch với mức bồi thường cao nhất 30.000.000đ/trường hợp\n- Nón du lịch Viettourist + Nước suối 01 chai 500ml/khách/ngày + Khăn lạnh\n@not_include\n- Tiền bồi dưỡng HDV và tài xế địa phương theo quy định 150,000đ/khách/3ngày.\n- Hành lý ký gửi theo quy định của hãng hàng không\n- Phụ thu phòng đơn (nếu có)\n- Vé tham quan vào cổng các điểm có thu phí (1) (2) (3) (4) : Quý khách mua vé trực tiếp tại cổng bán vé hoặc nhân viên Viettourist mua vé giúp Quý khách: Cáp treo Hòn thơm 1 lượt 300k / combo vé (2) +(3) 1 trieu đồng / vé (4) giá 200k \n- Chi phí cá nhân: Ăn uống ngoài chương trình, giặt ủi, điện thoại, giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, chi phí dù ghế, tắm nước ngọt…\n- Các chi phí phát sinh nếu tour bị hủy trong trường hợp bất khả kháng: Thiên tai, thời tiết, đình công, công ty sẽ không bồi hoàn các khoản chi phí phát sinh ngoài chương trình. Các tour có liên quan đến vé máy bay, vé máy bay trong tour sẽ thực hiện theo chính sách của hãng hàng không.\n@policy\nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ 01 trong 03 điều kiện (ĐK) sau đây:\n- ĐK1: Có chứng nhận tiêm đủ mũi ít nhất 14 ngày ko quá 12 tháng\n- ĐK2: Có giấy chứng nhận f0 không quá 6 tháng\n- ĐK3: Có xét nghiệm âm tính trong 72h\nCHÍNH THỨC: Bỏ quy định khách hàng bay từ HCM bắt buộc xét nghiệm âm tính nếu thoả mãn ĐK1 hoặc ĐK2. Khách hàng ở vùng dịch cấp độ 4 hoặc đang cách ly y tế vùng thì mới bắt buộc cần xét nghiệm âm tính trong 72h.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày và có gía trị trong 72h.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế.\nLưu ý:\n- Việc điều chỉnh yêu cầu xét nghiệm covid và mũi tiêm có thể sẽ thay đổi theo quy định hiện hành của Cơ quan Quản lý Nhà nước có thẩm quyền. - Trường hợp trước ngày khởi hành Qúy khách phát hiện bị nhiễm covid và có giấy xác nhận dương tính với sars-cov-2 thì thông báo với công ty Viettourist biết để làm thủ tục bảo lưu tiền tour trong 365 ngày, bảo lưu định danh đúng người đã đăng ký tham gia tour – không thay thế bởi người khác. Trong 365 ngày bảo lưu, Qúy khách chọn ngày đăng ký tham gia tour do Viettourist tổ chức phù hợp (Không hoàn lại tiền tour).\n- Trong trường hợp trong đoàn có phát sinh ca nhiễm covid 19, khách hàng có trách nhiệm phối hợp với Viettourist và chính quyền địa phương để thực hiện các biện pháp cách ly/ điều trị theo quy định hiện hành.\n- Các chi phí phát sinh trong quá trình cách ly điều trị, các chi phí xét nghiệm, cách ly y tế, vận chuyển, lưu trú, bữa ăn, điều trị, chi phí cá nhân khác… sẽ không nằm trong chi phí tour, dịch vụ và khách hàng tự chịu trách nhiệm chi trả.\nĐIỀU KIỆN NHẬN KHÁCH: \nNhận khách theo quy định từ địa phương được đánh giá có nguy cơ thấp và trung bình. Đáp ứng đủ điều kiện về đường bay hàng không và đường bộ.\n- Có kết quả xét nghiệm âm tính với sars-cov-2 trước ngày khởi hành 01 ngày.\n- Đã tiêm 2 mũi vắc xin phòng covid / hoặc giấy tờ xác nhận F0 đã khỏi bệnh không quá 06 tháng.\n- Khai báo y tế hoặc quét mã QR theo hướng dẫn.\n- Trẻ em, học sinh đi cùng người thân chưa tiêm vaccine thì cần có kết quả xét nghiệm âm tính covid trước ngày khởi hành 01 ngày.\n- Cam kết và chấp hành quy định phòng chống dịch, thực hiện “Thông điệp 5K” của bộ y tế về phòng chống dịch cov', '2022-02-25 14:42:12');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tro_giup`
+-- Table structure for table `tro_giup`
 --
 
 CREATE TABLE `tro_giup` (
@@ -378,27 +390,28 @@ CREATE TABLE `tro_giup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Đang đổ dữ liệu cho bảng `tro_giup`
+-- Dumping data for table `tro_giup`
 --
 
 INSERT INTO `tro_giup` (`id`, `id_loai_tro_giup`, `id_tai_khoan_gui`, `id_tai_khoan_tra_loi`, `id_tour`, `noi_dung`, `tra_loi`, `ngay_gui`, `ngay_tra_loi`) VALUES
 (1, 1, 3, 2, 1, 'Tôi muốn đặt tour đến Măng Đen và tôi đang ở Kon Tum thì nên đặt tour nào', 'Dạ kính chào quý khách, cảm ơn quý khách đã gửi trợ giúp đến cho chúng tối...', '2022-11-07 19:00:00', '2022-11-07 20:00:00'),
 (2, 2, 5, 2, 1, 'haha', 'Chúng tôi đã hủy tour', '2021-12-06 14:38:14', '2021-12-06 18:24:47'),
-(3, 2, 5, 2, 1, 'Tôi muốn hủy tour này', 'Chúng tôi đã hủy tour của bạn', '2021-12-06 14:42:14', '2021-12-06 18:31:16');
+(3, 2, 5, 2, 1, 'Tôi muốn hủy tour này', 'Chúng tôi đã hủy tour của bạn', '2021-12-06 14:42:14', '2021-12-06 18:31:16'),
+(4, 1, 11, 2, 16, 'toi muon dat tour nay', 'ok ban chung toi se mo tour nay cho ban dk', '2022-02-28 14:29:11', '2022-02-28 14:30:26');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `blog`
+-- Indexes for table `blog`
 --
 ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_khach_san_id_tai_khoan` (`id_tai_khoan`);
 
 --
--- Chỉ mục cho bảng `dat_tour`
+-- Indexes for table `dat_tour`
 --
 ALTER TABLE `dat_tour`
   ADD PRIMARY KEY (`id`),
@@ -406,7 +419,7 @@ ALTER TABLE `dat_tour`
   ADD KEY `fk_dat_tour_id_tour` (`id_tour`);
 
 --
--- Chỉ mục cho bảng `khach_hang`
+-- Indexes for table `khach_hang`
 --
 ALTER TABLE `khach_hang`
   ADD PRIMARY KEY (`id`),
@@ -414,28 +427,28 @@ ALTER TABLE `khach_hang`
   ADD KEY `fk_khach_hang_id_tinh` (`id_tinh`);
 
 --
--- Chỉ mục cho bảng `loai_slide`
+-- Indexes for table `loai_slide`
 --
 ALTER TABLE `loai_slide`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `ten` (`ten`);
 
 --
--- Chỉ mục cho bảng `loai_tro_giup`
+-- Indexes for table `loai_tro_giup`
 --
 ALTER TABLE `loai_tro_giup`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `ten` (`ten`);
 
 --
--- Chỉ mục cho bảng `quoc_gia`
+-- Indexes for table `quoc_gia`
 --
 ALTER TABLE `quoc_gia`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `ten` (`ten`);
 
 --
--- Chỉ mục cho bảng `slide`
+-- Indexes for table `slide`
 --
 ALTER TABLE `slide`
   ADD PRIMARY KEY (`id`),
@@ -443,7 +456,7 @@ ALTER TABLE `slide`
   ADD KEY `fk_slide_id_loai_slide` (`id_loai_slide`);
 
 --
--- Chỉ mục cho bảng `tai_khoan`
+-- Indexes for table `tai_khoan`
 --
 ALTER TABLE `tai_khoan`
   ADD PRIMARY KEY (`id`),
@@ -452,14 +465,14 @@ ALTER TABLE `tai_khoan`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Chỉ mục cho bảng `tinh`
+-- Indexes for table `tinh`
 --
 ALTER TABLE `tinh`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_tinh_id_quoc_gia` (`id_quoc_gia`);
 
 --
--- Chỉ mục cho bảng `tour`
+-- Indexes for table `tour`
 --
 ALTER TABLE `tour`
   ADD PRIMARY KEY (`id`),
@@ -468,7 +481,7 @@ ALTER TABLE `tour`
   ADD KEY `fk_tour_id_tinh_diem_den` (`id_tinh_diem_den`);
 
 --
--- Chỉ mục cho bảng `tro_giup`
+-- Indexes for table `tro_giup`
 --
 ALTER TABLE `tro_giup`
   ADD PRIMARY KEY (`id`),
@@ -478,114 +491,114 @@ ALTER TABLE `tro_giup`
   ADD KEY `fk_tro_giup_id_loai_tro_giup` (`id_loai_tro_giup`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `blog`
+-- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT cho bảng `dat_tour`
+-- AUTO_INCREMENT for table `dat_tour`
 --
 ALTER TABLE `dat_tour`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT cho bảng `khach_hang`
+-- AUTO_INCREMENT for table `khach_hang`
 --
 ALTER TABLE `khach_hang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT cho bảng `loai_slide`
+-- AUTO_INCREMENT for table `loai_slide`
 --
 ALTER TABLE `loai_slide`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `loai_tro_giup`
+-- AUTO_INCREMENT for table `loai_tro_giup`
 --
 ALTER TABLE `loai_tro_giup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho bảng `quoc_gia`
+-- AUTO_INCREMENT for table `quoc_gia`
 --
 ALTER TABLE `quoc_gia`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `slide`
+-- AUTO_INCREMENT for table `slide`
 --
 ALTER TABLE `slide`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho bảng `tai_khoan`
+-- AUTO_INCREMENT for table `tai_khoan`
 --
 ALTER TABLE `tai_khoan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT cho bảng `tinh`
+-- AUTO_INCREMENT for table `tinh`
 --
 ALTER TABLE `tinh`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
--- AUTO_INCREMENT cho bảng `tour`
+-- AUTO_INCREMENT for table `tour`
 --
 ALTER TABLE `tour`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT cho bảng `tro_giup`
+-- AUTO_INCREMENT for table `tro_giup`
 --
 ALTER TABLE `tro_giup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `blog`
+-- Constraints for table `blog`
 --
 ALTER TABLE `blog`
   ADD CONSTRAINT `fk_khach_san_id_tai_khoan` FOREIGN KEY (`id_tai_khoan`) REFERENCES `tai_khoan` (`id`);
 
 --
--- Các ràng buộc cho bảng `dat_tour`
+-- Constraints for table `dat_tour`
 --
 ALTER TABLE `dat_tour`
   ADD CONSTRAINT `fk_dat_tour_id_tai_khoan` FOREIGN KEY (`id_tai_khoan`) REFERENCES `tai_khoan` (`id`),
   ADD CONSTRAINT `fk_dat_tour_id_tour` FOREIGN KEY (`id_tour`) REFERENCES `tour` (`id`);
 
 --
--- Các ràng buộc cho bảng `khach_hang`
+-- Constraints for table `khach_hang`
 --
 ALTER TABLE `khach_hang`
   ADD CONSTRAINT `fk_khach_hang_id_tai_khoan` FOREIGN KEY (`id_tai_khoan`) REFERENCES `tai_khoan` (`id`),
   ADD CONSTRAINT `fk_khach_hang_id_tinh` FOREIGN KEY (`id_tinh`) REFERENCES `tinh` (`id`);
 
 --
--- Các ràng buộc cho bảng `slide`
+-- Constraints for table `slide`
 --
 ALTER TABLE `slide`
   ADD CONSTRAINT `fk_slide_id_loai_slide` FOREIGN KEY (`id_loai_slide`) REFERENCES `loai_slide` (`id`),
   ADD CONSTRAINT `fk_slide_id_tai_khoan` FOREIGN KEY (`id_tai_khoan`) REFERENCES `tai_khoan` (`id`);
 
 --
--- Các ràng buộc cho bảng `tinh`
+-- Constraints for table `tinh`
 --
 ALTER TABLE `tinh`
   ADD CONSTRAINT `fk_tinh_id_quoc_gia` FOREIGN KEY (`id_quoc_gia`) REFERENCES `quoc_gia` (`id`);
 
 --
--- Các ràng buộc cho bảng `tour`
+-- Constraints for table `tour`
 --
 ALTER TABLE `tour`
   ADD CONSTRAINT `fk_tour_id_tai_khoan` FOREIGN KEY (`id_tai_khoan`) REFERENCES `tai_khoan` (`id`),
@@ -593,7 +606,7 @@ ALTER TABLE `tour`
   ADD CONSTRAINT `fk_tour_id_tinh_xuat_phat` FOREIGN KEY (`id_tinh_xuat_phat`) REFERENCES `tinh` (`id`);
 
 --
--- Các ràng buộc cho bảng `tro_giup`
+-- Constraints for table `tro_giup`
 --
 ALTER TABLE `tro_giup`
   ADD CONSTRAINT `fk_tro_giup_id_loai_tro_giup` FOREIGN KEY (`id_loai_tro_giup`) REFERENCES `loai_tro_giup` (`id`),
