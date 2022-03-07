@@ -233,7 +233,7 @@ $controller = 'dattour';
             }
         });
         $('#cancel-button').prop('disabled', true);
-        $('#cancel-button').html('Đang hủy...');
+        $('#cancel-button').html('Đang hủy...'); 
     }
 
     const confirmAccept = () => {

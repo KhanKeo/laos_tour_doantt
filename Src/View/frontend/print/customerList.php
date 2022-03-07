@@ -15,6 +15,34 @@
 
 <h2 class="text-center">DANH SÁCH KHÁCH HÀNG ĐẶT TOUR</h2>
 <hr />
+<table>
+    <tr>
+        <td>
+         Tên tour: <b><?= $tour['ten'] ?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Mã tour: <b><?= $tour['id'] ?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Đi từ: <b><?= $tour['dia_chi_xuat_phat'] . ', ' . $tour['tinh_xuat_phat'] . ', ' . $tour['quoc_gia_xuat_phat'] ?></b> tới <b><?= $tour['dia_chi_diem_den'] . ', ' . $tour['tinh_diem_den'] . ', ' . $tour['quoc_gia_diem_den'] ?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Khởi hành lúc: <b><?= date('H:i', strtotime($tour['ngay_khoi_hanh'])) ?></b> ngày <b><?= date('d/m/Y', strtotime($tour['ngay_khoi_hanh'])) ?></b> tới <b><?= date('H:i', strtotime($tour['ngay_ket_thuc'])) ?></b> ngày <b><?= date('d/m/Y', strtotime($tour['ngay_ket_thuc'])) ?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Thời gian: <b><?= $tour['so_ngay'] ?></b> ngày <b><?= $tour['so_ngay'] - 1 ?></b> đêm
+        </td>
+    </tr>
+</table>
+<br>
 <table class="table">
     <thead>
         <tr>
@@ -52,32 +80,4 @@
     </tbody>
 </table>
 <br>
-<div><b class="total">Tổng tiền: <?= number_format($total) ?>đ</b></div>
-<br>
-<table>
-    <tr>
-        <td>
-            <b><?= $tour['ten'] ?></b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Mã tour: <b><?= $tour['id'] ?></b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Đi từ: <b><?= $tour['dia_chi_xuat_phat'] . ', ' . $tour['tinh_xuat_phat'] . ', ' . $tour['quoc_gia_xuat_phat'] ?></b> tới <b><?= $tour['dia_chi_diem_den'] . ', ' . $tour['tinh_diem_den'] . ', ' . $tour['quoc_gia_diem_den'] ?></b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Khởi hành lúc: <b><?= date('H:i', strtotime($tour['ngay_khoi_hanh'])) ?></b> ngày <b><?= date('d/m/Y', strtotime($tour['ngay_khoi_hanh'])) ?></b> tới <b><?= date('H:i', strtotime($tour['ngay_ket_thuc'])) ?></b> ngày <b><?= date('d/m/Y', strtotime($tour['ngay_ket_thuc'])) ?></b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Thời gian: <b><?= $tour['so_ngay'] ?></b> ngày <b><?= $tour['so_ngay'] - 1 ?></b> đêm
-        </td>
-    </tr>
-</table>
+<div><b class="total">Tổng tiền: <?= number_format($total) ?>Đ</b></div>
