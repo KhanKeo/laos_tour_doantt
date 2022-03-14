@@ -365,7 +365,11 @@ class DatTourController extends Controller
 
         $result = $this->model()->find($id)
             ->join('tour', 'tour.id', 'dat_tour.id_tour')
-            ->select('dat_tour.*', 'tour.ten AS ten_tour')
+            ->join('tinh AS tinh_xuat_phat', 'tinh_xuat_phat.id', 'tour.id_tinh_xuat_phat')
+            ->join('tinh AS tinh_diem_den', 'tinh_diem_den.id', 'tour.id_tinh_diem_den')
+            ->join('quoc_gia AS quoc_gia_xuat_phat', 'quoc_gia_xuat_phat.id', 'tinh_xuat_phat.id_quoc_gia')
+            ->join('quoc_gia AS quoc_gia_diem_den', 'quoc_gia_diem_den.id', 'tinh_diem_den.id_quoc_gia')
+            ->select('dat_tour.*', 'tour.ten AS ten_tour', 'dia_chi_xuat_phat', 'dia_chi_diem_den', 'tinh_xuat_phat.ten AS tinh_xuat_phat', 'quoc_gia_xuat_phat.ten AS quoc_gia_xuat_phat', 'tinh_diem_den.ten AS tinh_diem_den', 'quoc_gia_diem_den.ten AS quoc_gia_diem_den')
             ->first();
 
         $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);

@@ -18,6 +18,7 @@
 <h3>Thông tin đặt tour</h3>
 Tên tour: <?= $result['ten_tour'] ?><br/>
 Mã đặt tour: <?= $result['ma_dat_tour'] ?><br/>
+Địa chỉ: <b><?= $result['dia_chi_xuat_phat'] . ', ' . $result['tinh_xuat_phat'] . ', ' . $result['quoc_gia_xuat_phat'] ?></b> tới <b><?= $result['dia_chi_diem_den'] . ', ' . $result['tinh_diem_den'] . ', ' . $result['quoc_gia_diem_den'] ?></b><br />
 Ngày đặt: <?= date('H:i:s', strtotime($result['ngay_dat'])) ?> ngày <?= date('d/m/Y', strtotime($result['ngay_dat'])) ?><br/>
 Họ và tên: <?= $result['ho'] ?> <?= $result['ten'] ?><br/>
 <hr />
