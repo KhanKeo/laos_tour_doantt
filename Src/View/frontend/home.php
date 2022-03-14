@@ -246,7 +246,7 @@
                 <div class="b-feature-block">
                     <span><i class="fa fa-dollar"></i></span>
                     <h3>Giá cả hợp lý</h3>
-                    <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                    <p></p>
                 </div><!-- end b-feature-block -->
             </div><!-- end columns -->
 
@@ -254,7 +254,7 @@
                 <div class="b-feature-block">
                     <span><i class="fa fa-lock"></i></span>
                     <h3>An toàn và bảo mật</h3>
-                    <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                    <p></p>
                 </div><!-- end b-feature-block -->
             </div><!-- end columns -->
 
@@ -262,7 +262,7 @@
                 <div class="b-feature-block">
                     <span><i class="fa fa-thumbs-up"></i></span>
                     <h3>Các đại lý du lịch tốt nhất</h3>
-                    <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                    <p></p>
                 </div><!-- end b-feature-block -->
             </div><!-- end columns -->
 
@@ -270,7 +270,7 @@
                 <div class="b-feature-block">
                     <span><i class="fa fa-bars"></i></span>
                     <h3>Hướng dẫn viên du lịch chuyên nghiệp</h3>
-                    <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                    <p></p>
                 </div><!-- end b-feature-block -->
             </div><!-- end columns -->
         </div><!-- end row -->
@@ -362,7 +362,7 @@
                     <div class="carousel-inner text-center">
 
                         <div class="item active">
-                            <blockquote>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper.</blockquote>
+                            <blockquote>Sioudomphanh Khankeo<br />+84 0915822429<br />FB:Khankeo SODP<br/>Gmail: Khankeo9992016@gmail.com</blockquote>
                             <div class="rating">
                                 <span><i class="fa fa-star orange"></i></span>
                                 <span><i class="fa fa-star orange"></i></span>
@@ -374,7 +374,7 @@
                         </div><!-- end item -->
 
                         <div class="item">
-                            <blockquote>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper.</blockquote>
+                        <blockquote>Keovichith Xaymeth<br />+84 0915822410<br />FB:Xay Keovichith<br/>Gmail: Xay123@gmail.com</blockquote>
                             <div class="rating">
                                 <span><i class="fa fa-star orange"></i></span>
                                 <span><i class="fa fa-star orange"></i></span>
@@ -383,11 +383,11 @@
                                 <span><i class="fa fa-star lightgrey"></i></span>
                             </div><!-- end rating -->
 
-                            <small>SODP Khankeo</small>
+                            <small>KVC Xaymeth</small>
                         </div><!-- end item -->
 
                         <div class="item">
-                            <blockquote>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper.</blockquote>
+                        <blockquote>Sioudomphanh Khankeo<br />+84 0915822429<br />FB:Khankeo SODP<br/>Gmail: Khankeo9992016@gmail.com</blockquote>
                             <div class="rating">
                                 <span><i class="fa fa-star orange"></i></span>
                                 <span><i class="fa fa-star orange"></i></span>
@@ -396,7 +396,7 @@
                                 <span><i class="fa fa-star lightgrey"></i></span>
                             </div><!-- end rating -->
 
-                            <small> Khankeo</small>
+                            <small> SODP Khankeo</small>
                         </div><!-- end item -->
 
                     </div><!-- end carousel-inner -->
@@ -404,7 +404,7 @@
                     <ol class="carousel-indicators">
                         <li data-target="#quote-carousel" data-slide-to="0" class="active"><img src="\Images_Tour\profile1.jpg" class="img-responsive" alt="client-img">
                         </li>
-                        <li data-target="#quote-carousel" data-slide-to="1"><img src="\Images_Tour\profile1.jpg" class="img-responsive" alt="client-img">
+                        <li data-target="#quote-carousel" data-slide-to="1"><img src="\Images_Tour\profile2.jpg" class="img-responsive" alt="client-img">
                         </li>
                         <li data-target="#quote-carousel" data-slide-to="2"><img src="\Images_Tour\profile1.jpg" class="img-responsive" alt="client-img">
                         </li>

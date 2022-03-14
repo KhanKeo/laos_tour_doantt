@@ -14,7 +14,6 @@
 </style>
 
 <h2 class="text-center">DANH SÁCH KHÁCH HÀNG ĐẶT TOUR</h2>
-<hr />
 <table>
     <tr>
         <td>

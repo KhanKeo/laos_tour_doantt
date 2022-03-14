@@ -32,7 +32,7 @@
                         </div><!-- end custom-form -->
 
                         <div class="flex-content-img custom-form-img">
-                            <img src="<?= asset('images/main/login.png') ?>" class="img-responsive" alt="registration-img" />
+                            <img src="<?= asset('images/main/login.jfif') ?>" class="img-responsive" alt="registration-img" />
                         </div><!-- end custom-form-img -->
                     </div><!-- end form-content -->
 
